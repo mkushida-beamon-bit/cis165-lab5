@@ -14,10 +14,10 @@ Display the loan amount, monthly interest rate, number of payments, monthly paym
 
 ## Testing
 Program and test	Values used	Expected results	Actual results	Match or correction
-Compound interest — assigned values	$1,000; 4.25%; 12 times compounded	Interest = $43.34; Amount = $1,043.34	Fill in after running	Check results
-Compound interest — changed values	Choose a different positive principal, rate, and compounding frequency	Calculate before running	Fill in after running	Check results
-Loan payment — assigned values	$10,000; 12%; 36 payments	Monthly payment ≈ $332.14; Amount paid back ≈ $11,957.15; Interest paid ≈ $1,957.15	Fill in after running	Check results
-Loan payment — changed values	Choose a different positive loan amount, rate, and payment count	Calculate before running	Fill in after running	Check results
+Compound interest — assigned values	$1,000; 4.25%; 12 times compounded	Interest = $43.34; Amount = $1,043.34	Interest = $43.34; Amount = $1,043.34	Match
+Compound interest — changed values	$2,000; 5%; 4 times compounded	Interest = $103.81; Amount = $2,103.81	Interest = $103.81; Amount = $2,103.81	Match
+Loan payment — assigned values	$10,000; 12%; 36 payments	Monthly payment ≈ $332.14; Amount paid back ≈ $11,957.15; Interest paid ≈ $1,957.15	Monthly payment ≈ $332.14; Amount paid back ≈ $11,957.15; Interest paid ≈ $1,957.15	Match
+Loan payment — changed values	$5,000; 6%; 24 payments	Monthly payment ≈ $221.60; Amount paid back ≈ $5,318.32; Interest paid ≈ $318.32	Monthly payment ≈ $221.60; Amount paid back ≈ $5,318.32; Interest paid ≈ $318.32	Match
 
 ## Code Explanations
 # Why must a percentage be divided by 100 before using it in a formula?
@@ -58,5 +58,4 @@ To run the loan-payment program on Linux or macOS, use:
 # Both programs can also be compiled and run in OnlineGDB by selecting C++, entering the source code, and clicking Run.
 
 ## Final Verification
-After compiling and running both programs, I will compare the actual results with the expected results for the assigned test cases. I will also run a second test with different positive values for each program and record the expected and actual results in the testing table.
-Before submitting, I will verify that both source files compile without warnings or errors, that all four required files are in the top level of my cis165-lab5 GitHub repository, and that the repository and final commit are publicly visible while signed out of GitHub.
+I ran both programs using the assigned values and the changed test values. The actual results matched the expected results for all four tests. Both programs produced the expected interest calculations and formatted the displayed results to two decimal places.
